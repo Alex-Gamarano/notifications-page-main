@@ -50,8 +50,11 @@ h1 {
 .reset {
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 800;
   color: var(--dark-grayish-blue);
+}
+.reset:hover {
+  color: var(--very-dark-blue);
 }
 
 .circle {
@@ -75,6 +78,26 @@ h1 {
   padding: 1rem;
   font-size: 1.5rem;
   border-radius: 10px;
+  color: var(--grayish-blue);
+  font-weight: 500;
+}
+
+.reaction {
+  font-weight: 800;
+}
+.message {
+  background-color: transparent;
+}
+.box:hover {
+  background-color: var(--light-grayish-blue-1);
+  cursor: pointer;
+  border: none;
+}
+.box {
+  border: 1px solid var(--grayish-blue);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
 .avatar {
