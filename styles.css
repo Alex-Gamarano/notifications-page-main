@@ -1,0 +1,106 @@
+:root {
+  font-size: 62.5%;
+  /*
+Colors
+### Primary */
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  /* ### Neutral */
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans";
+}
+
+main {
+  width: 90dvw;
+  max-width: 730px;
+  background-color: var(--white);
+  margin: auto;
+  padding: 1rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.counter {
+  color: var(--white);
+  background-color: var(--blue);
+  font-size: 1.5rem;
+  padding: 0.2rem 1.1rem 0.3rem;
+  border-radius: 0.6rem;
+}
+.reset {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: var(--red);
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--light-grayish-blue-1);
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+.post-title {
+  font-weight: 800;
+  color: var(--blue);
+}
+.name {
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+.name:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+.post-title:hover {
+  cursor: pointer;
+  color: var(--dark-grayish-blue);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
